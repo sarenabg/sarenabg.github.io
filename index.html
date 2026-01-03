@@ -1,132 +1,284 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Saren Abgaryan | Web3 PM Blog</title>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap');
-        
-        :root {
-            --bg-color: #1a1a1a;
-            --text-color: #e0e0e0;
-            --accent-color: #00ff9d;
-            --link-color: #00ff9d;
-            --secondary-color: #888;
-        }
-        
-        body {
-            font-family: 'JetBrains Mono', monospace;
-            font-size: 15px;
-            line-height: 1.6;
-            max-width: 800px;
-            margin: 40px auto;
-            padding: 20px;
-            background-color: var(--bg-color);
-            color: var(--text-color);
-        }
+    <title>Saren Abgaryan | Web3 Product Leader</title>
+    <meta name="description"
+        content="Product Leader in Web3 with 8+ years of experience. Specializing in Rollups, DeFi, and Blockchain Infrastructure.">
 
-        nav {
-            margin-bottom: 40px;
-        }
+    <!-- Open Graph / Social Meta Tags -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Saren Abgaryan | Web3 Product Leader">
+    <meta property="og:description"
+        content="Product Leader with 8+ years in Web3. Shipping rollups, DA layers, and high-TVL DeFi protocols.">
+    <meta property="og:url" content="https://sarenabg.github.io/Blog/">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Saren Abgaryan | Web3 Product Leader">
+    <meta name="twitter:description"
+        content="Product Leader with 8+ years in Web3. Shipping rollups, DA layers, and high-TVL DeFi protocols.">
 
-        nav a {
-            color: var(--link-color);
-            text-decoration: none;
-            margin-right: 20px;
-        }
+    <!-- Favicon -->
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔗</text></svg>">
 
-        nav a:hover {
-            text-decoration: underline;
-        }
-
-        h1 {
-            font-size: 20px;
-            font-weight: normal;
-            margin: 40px 0 20px 0;
-        }
-
-        .intro {
-            margin: 30px 0 50px 0;
-        }
-
-        .posts {
-            margin-top: 40px;
-        }
-
-        .post-link {
-            display: block;
-            color: var(--text-color);
-            text-decoration: none;
-            margin-bottom: 15px;
-            line-height: 1.5;
-        }
-
-        .post-link:hover {
-            text-decoration: underline;
-        }
-
-        .date {
-            color: var(--secondary-color);
-            display: inline-block;
-            width: 70px;
-            margin-right: 10px;
-        }
-
-        .social {
-            margin-top: 40px;
-        }
-
-        .social a {
-            color: var(--text-color);
-            text-decoration: none;
-            margin-right: 15px;
-        }
-
-        footer {
-            margin-top: 100px;
-            color: var(--secondary-color);
-            font-size: 0.9em;
-            display: flex;
-            justify-content: space-between;
-        }
-
-        footer a {
-            color: var(--secondary-color);
-            text-decoration: none;
-        }
-
-        footer a:hover {
-            text-decoration: underline;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
-    <nav>
-        <a href="index.html">Home</a>
-    </nav>
 
-    <h1>Saren Abgaryan</h1>
+    <div class="container">
+        <!-- Navigation -->
+        <nav>
+            <a href="mailto:saren.abgaryan@yahoo.com" class="nav-email mono">saren.abgaryan@yahoo.com</a>
+            <div class="nav-links-wrapper">
+                <div class="nav-links">
+                    <a href="#about">About</a>
+                    <a href="#experience">Experience</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#writing">Writing</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
+                    <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                    <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                </button>
+                <button id="menu-toggle" class="menu-toggle" aria-label="Toggle menu">
+                    <svg class="menu-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <line x1="3" y1="12" x2="21" y2="12"></line>
+                        <line x1="3" y1="18" x2="21" y2="18"></line>
+                    </svg>
+                    <svg class="close-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="18" y1="6" x2="6" y2="18"></line>
+                        <line x1="6" y1="6" x2="18" y2="18"></line>
+                    </svg>
+                </button>
+            </div>
+        </nav>
 
-    <div class="intro">
-        <p>Web3 Product Manager with 6+ years of experience in DeFi and blockchain infrastructure. Writing about product management in Web3, DeFi innovations, and decentralized technology.</p>
-        <p>Find me on GitHub, Twitter and LinkedIn.</p>
+        <!-- Hero Section -->
+        <header class="hero">
+            <div class="mono">Hi, I'm Saren Abgaryan, PhD.</div>
+            <h1 id="hero-headline">Architecting the Decentralized Web.</h1>
+            <p>Product Manager with 8+ years in Web3. Shipping self-serve rollups, data availability layers, and
+                high-TVL DeFi protocols.</p>
+            <a href="#experience" class="cta-button">View My Work</a>
+        </header>
+
+        <!-- About Section -->
+        <section id="about">
+            <h2>About Me</h2>
+            <p>
+                I am a Product Manager in Web3 with deep expertise in blockchain architecture. Fluent in DeFi protocol
+                design, I bridge the gap between complex technical innovations and user-centric product requirements.
+            </p>
+            <p>
+                I have a track record of shipping self-serve rollup tooling, data availability infrastructure, and
+                managing products with over $200M TVL. I actively collaborate with industry leaders like LayerZero,
+                Dune, and Hacken, and frequently speak at Web3 conferences.
+            </p>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience">
+            <h2>Experience</h2>
+            <div class="timeline">
+
+                <!-- Role 1: Head of Product / Contributor -->
+                <div class="job-item">
+                    <div class="job-header">
+                        <div class="job-title">Head of Product / Contributor (Remote)</div>
+                        <div class="company"><a href="https://glitchd.network/" target="_blank"
+                                rel="noopener noreferrer">GlitchD Network</a> – Blyz App</div>
+                        <div class="date">Jun 2024 – Present</div>
+                    </div>
+                    <ul class="job-details">
+                        <li>Own the vision and multi-year roadmap for both an “AWS-for-Web3” infrastructure suite (L2/L3
+                            rollups, DA layer) and the Blyz application platform, guiding protocols from ideation and
+                            technical specs through launch readiness.</li>
+                        <li>Lead 3 cross-functional teams (7+ engineers/designers) to ship a self-serve rollup builder
+                            and drive PMF search by mapping user journeys, prioritizing core features, and iterating
+                            with community feedback.</li>
+                        <li>Coordinate GTM with sales/marketing and lead technical integrations with ecosystem partners
+                            (e.g., LayerZero, Dune) to secure co-grant programs and early pilot clients.</li>
+                        <li>Define activation, retention, and cost KPIs, running user interviews and experiments to
+                            improve onboarding and self-serve adoption.</li>
+                    </ul>
+                </div>
+
+                <!-- Role 3: Web3 Product Advisor -->
+                <div class="job-item">
+                    <div class="job-header">
+                        <div class="job-title">Web3 Product Advisor</div>
+                        <div class="company">Fractional (Remote)</div>
+                        <div class="date">Feb 2024 – Jun 2024</div>
+                    </div>
+                    <ul class="job-details">
+                        <li>Advised multiple teams on end-to-end product delivery: PRDs, smart contract architecture,
+                            and UX for DeFi and Web3 apps.</li>
+                        <li>Led product work on a real-estate asset tokenization platform (RWA), from concept and specs
+                            through early development.</li>
+                        <li>Supported DeFi protocol design: on-chain governance, liquidity mining, staking, and swap
+                            integrations.</li>
+                    </ul>
+                </div>
+
+                <!-- Role 4: Broctagon -->
+                <div class="job-item">
+                    <div class="job-header">
+                        <div class="job-title">Web3 Product Manager (Remote)</div>
+                        <div class="company"><a href="https://broctagon.com/" target="_blank"
+                                rel="noopener noreferrer">Broctagon Fintech Group</a></div>
+                        <div class="date">Nov 2021 – Feb 2024</div>
+                    </div>
+                    <ul class="job-details">
+                        <li>Led development of DeFi products (arbitrage bots, yield farming, staking, lending) for
+                            global fintech clients.</li>
+                        <li>Drove a flagship DeFi product to $200M+ TVL; increased per-project margins by 700% by
+                            reducing build costs and reusing core components.</li>
+                        <li>Managed full product lifecycle using Agile: discovery, market research, delivery, launch,
+                            and continuous optimization with cross-functional teams.</li>
+                    </ul>
+                </div>
+
+                <!-- Role 5: Heyi Blockchain -->
+                <div class="job-item">
+                    <div class="job-header">
+                        <div class="job-title">Web3 Project Manager (Shanghai)</div>
+                        <div class="company">Heyi Blockchain</div>
+                        <div class="date">Aug 2017 – Jan 2020</div>
+                    </div>
+                    <ul class="job-details">
+                        <li>Co-founded the blockchain advisory arm for Heyi Group (affiliated with King & Wood
+                            Mallesons).</li>
+                        <li>Managed multiple advisory engagements and co-authored white papers for Ethereum-based
+                            insurance, gaming, and wellness platforms.</li>
+                    </ul>
+                </div>
+
+                <!-- Role 6: ViewFin -->
+                <div class="job-item">
+                    <div class="job-header">
+                        <div class="job-title">Blockchain Research (Shanghai)</div>
+                        <div class="company">ViewFin Blockchain Co</div>
+                        <div class="date">Apr 2017 – Aug 2017</div>
+                    </div>
+                    <ul class="job-details">
+                        <li>Researched and co-authored the Aimwise platform white paper, covering use cases, technical
+                            design, and go-to-market.</li>
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills">
+            <h2>Technical Skills</h2>
+            <div class="bento-grid">
+                <div class="bento-card">
+                    <h3>Infrastructure</h3>
+                    <div class="skill-tags">
+                        <span class="tag">OP Stack</span>
+                        <span class="tag">Arbitrum Orbit</span>
+                        <span class="tag">ZK Stack</span>
+                        <span class="tag">Scroll</span>
+                        <span class="tag">Data Availability</span>
+                    </div>
+                </div>
+                <div class="bento-card">
+                    <h3>DeFi & Product</h3>
+                    <div class="skill-tags">
+                        <span class="tag">AMMs</span>
+                        <span class="tag">Staking & Yield</span>
+                        <span class="tag">Lending</span>
+                        <span class="tag">Tokenomics</span>
+                        <span class="tag">Governance</span>
+                    </div>
+                </div>
+                <div class="bento-card">
+                    <h3>Process & Tools</h3>
+                    <div class="skill-tags">
+                        <span class="tag">Agile/Scrum</span>
+                        <span class="tag">Dune Analytics</span>
+                        <span class="tag">SQL</span>
+                        <span class="tag">Smart Contract QA</span>
+                        <span class="tag">UX Research</span>
+                    </div>
+                </div>
+                <div class="bento-card">
+                    <h3>Certifications</h3>
+                    <div class="skill-tags">
+                        <a href="https://www.credly.com/earner/earned/badge/21ff0694-4998-4dfc-8da3-bd8caca188af"
+                            class="tag" target="_blank" rel="noopener noreferrer">PMP®</a>
+                        <a href="https://www.credly.com/earner/earned/badge/b4992a68-51ae-463b-94e0-e127906f98de"
+                            class="tag" target="_blank" rel="noopener noreferrer">PSPO I</a>
+                        <a href="https://www.credly.com/earner/earned/badge/5ffcb1d1-2db0-423e-8d01-ce8da14be823"
+                            class="tag" target="_blank" rel="noopener noreferrer">AWS Cloud Practitioner</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Writing/Blog Section -->
+        <section id="writing">
+            <h2>Writing</h2>
+            <div class="posts-grid">
+                <a href="https://www.linkedin.com/pulse/era-architect-builder-how-ai-turns-product-managers-abgaryan-phd-20j4f/"
+                    target="_blank" rel="noopener noreferrer" class="blog-card">
+                    <span class="blog-date">LinkedIn Pulse</span>
+                    <h3 class="blog-title">The Era of the "Architect-Builder": How AI Turns Product Managers into
+                        Builders</h3>
+                </a>
+                <a href="https://www.linkedin.com/pulse/invisible-crypto-stack-how-i-built-gasless-on-chain-abgaryan-phd-hpiif/"
+                    target="_blank" rel="noopener noreferrer" class="blog-card">
+                    <span class="blog-date">LinkedIn Pulse</span>
+                    <h3 class="blog-title">The "Invisible Crypto" Stack: How I Built a Gasless, On-Chain App in One
+                        Weekend</h3>
+                </a>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <section id="contact">
+            <footer>
+                <div class="social-links">
+                    <a href="mailto:saren.abgaryan@yahoo.com">Email</a>
+                    <a href="https://linkedin.com/in/saren-abgaryan" target="_blank"
+                        rel="noopener noreferrer">LinkedIn</a>
+                    <a href="https://github.com/sarenabg" target="_blank" rel="noopener noreferrer">GitHub</a>
+                    <a href="https://x.com/Sar_abg1" target="_blank" rel="noopener noreferrer">Twitter</a>
+                </div>
+                <br>
+                <p>&copy; <span id="year"></span> Saren Abgaryan. Built with decentralized dreams.</p>
+            </footer>
+        </section>
+
     </div>
 
-    <div class="posts">
-        <h1>Writing</h1>
-        <a href="#" class="post-link"><span class="date">15/02</span>Building High-Throughput ZK-Rollups: PM Perspective</a>
-        <a href="#" class="post-link"><span class="date">01/02</span>Lessons from Managing $200M TVL DeFi Products</a>
-        <a href="#" class="post-link"><span class="date">15/01</span>Product Development in Web3: A Practical Guide</a>
-        <a href="#" class="post-link"><span class="date">01/01</span>From Traditional PM to Web3: My Journey</a>
-    </div>
-
-    <footer>
-        <div>Copyright © 2024 Saren Abgaryan</div>
-        <div>
-            <a href="index.html">Home</a>
-        </div>
-    </footer>
+    <script src="script.js"></script>
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
 </body>
-</html>
 
+</html>
